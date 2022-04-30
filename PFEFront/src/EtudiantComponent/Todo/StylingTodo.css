@@ -1,0 +1,39 @@
+.removeAll{
+margin: 10px;
+border: none;
+text-decoration:underline;
+background-color: transparent;
+color: rgb(57, 82, 156);
+cursor: pointer;
+width: 100%;
+text-align: justify;
+}
+.remove{
+    border: none;
+    text-decoration:underline;
+    background-color: transparent;
+    color: rgb(57, 82, 156);
+    cursor: pointer;   
+}
+.removeAll:hover,.remove:hover{
+    color: rgb(97, 90, 90);
+    text-decoration: none;
+}
+.error{
+    color: red;
+}
+.taches{
+    text-align: justify;
+}
+.tachetxt{
+    margin-bottom: 10px;
+}
+.list{
+    height: 250px;
+    overflow: scroll;
+    padding-right: 10px;
+    height: 350px;
+}
+.todo{
+    height: 445.15px;
+}

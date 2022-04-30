@@ -1,0 +1,136 @@
+:root{
+    --text-color : rgb(97, 90, 90);
+    --second-color : #FFFFFF;
+}
+.mynav{
+    width : 100% ;
+    height: 50px;
+    background-color: #222;
+    color: white;
+}
+.right{
+    float: right;
+    height:100%;
+    padding:0 10px;
+    /* width:70%; */
+    display: flex;
+    justify-content:end;
+    cursor: pointer;
+}
+.left{
+    float: left;
+    height: 100%;
+    padding:0 8px;
+    font-family: 'Hurricane';
+    font-size: 25px;
+    margin-top: -20px;
+}
+.right img{
+    border-radius: 49%;
+    height: 40px;
+    padding-top: 5px;
+}
+.menu{
+    position: absolute;
+    height: fit-content;
+    top:37px;
+    padding:5px;
+    display: none;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul::after{
+    content: "";
+    position: absolute;
+    left: 170px;
+    top:9px;
+    z-index: 100;
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 7px solid transparent;
+    border-bottom : 12px solid #f6f6f6;
+    border-left : 8px solid transparent;
+}
+.menu li {
+    border: none;
+    color:#222;
+    border-bottom: 1px solid #222;
+    background-color: #f6f6f6;
+    padding: 7px;
+    font-size: 15px;
+}
+.menu li:hover{
+    color: var(--text-color);
+    font-size: 16px;
+}
+.right:hover .menu{
+    display: inline;
+    
+}
+.mylists{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+.list1,.list2,.list3,.list4{
+     background-color: #f6f6f6;
+    border-radius: 10px; 
+     margin: 10px;
+}
+.todo,.inprogress,.testing,.done{
+    margin: 10px;
+    padding: 0 10px;
+    padding: 10px;
+}
+h5{
+    color: var(--text-color);
+}
+.taches{
+    background-color: var(--second-color);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom:20px  ;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px transparent; 
+    border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color) 
+  }
+.ajoutache{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.ajoutache input{
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px var(--text-color);
+}
+.ajoutache button{
+    width: fit-content;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: rgb(57, 82, 156);
+    color: #f6f6f6;
+    border-radius: 5px;
+    cursor: pointer;
+}
